@@ -1,3 +1,4 @@
+#!/bin/bash
 # Clone a given repository, extract any files belonging to the given language, and delete the repository afterwards to save space.
 in=$1
 language=$2
