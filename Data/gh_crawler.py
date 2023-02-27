@@ -28,7 +28,7 @@ def main():
 			for repository, stars in sorted(results, key=lambda e: e[1], reverse=True):
 				if repository not in repositories:
 					repositories.add(repository)
-					f.write(f'{stars}\t{repository}\n')
+					f.write(f'{stars}#{repository}\n')
 			f.flush()
 			print(f'Collected {len(repositories):,} repositories so far; lowest number of stars: {next_max_stars:,}')
 
