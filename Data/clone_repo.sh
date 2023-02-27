@@ -3,7 +3,7 @@ in=$1
 language=$2
 
 # Extract the org and name from lines formatted as stars\thttps://github.com/org/name
-repo=$(echo $in | cut -d$'\t' -f2);
+repo=$(echo $in | cut -d$'#' -f2);
 name_part=$(echo $repo | cut -d"/" -f4-6);
 name=$(echo $name_part | cut -d"/" -f2);
 org=$(echo $name_part | cut -d"/" -f1);
