@@ -1,3 +1,4 @@
+#!/bin/bash
 # Hand-picked set of languages.
 langs=("C" "C#" "C++" "Go" "Java" "JavaScript" "PHP" "Python" "Ruby" "Rust" "Scala" "TypeScript")
 
